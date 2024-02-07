@@ -73,8 +73,7 @@ Resources:
             systemctl start apache2.service
             cd /var/www/html
             sudo rm index.html
-            sudo aws s3 cp s3://udacity-demo-1/udacity.zip .
-            sudo unzip -o udacity.zip
+            sudo aws s3 cp s3://udacity-nd9991/index.html
             systemctl start apache2.service
         ImageId: ami-08fdec01f5df9998f
         SecurityGroupIds:
